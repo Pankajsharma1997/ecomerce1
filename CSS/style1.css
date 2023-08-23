@@ -1,0 +1,53 @@
+.logo{
+    width:7%;
+    height:7%;
+      }
+
+ /*navbar  */
+      .navbar{
+        background-color: #72cc50;
+      }
+/* navbar link */
+     .navbar a{
+    color:#fff;
+            }
+
+           
+            
+           
+
+/* footer */
+ footer{
+    background-color:#00AEAD;
+    color:#fff;
+    text-align: center;
+    margin-top:20px;
+    padding:15px;
+ }
+
+  /* third chlid */
+   .mission-heading{
+    margin-top: 30px;
+  
+   
+  }
+.section-heading{
+    text-align:center;
+    padding:5px;
+    background-color: #01A66F;
+    color:#fff;
+}
+
+.filled-button{
+  text-decoration: none;
+  background-color: #fff;
+  color:#72cc50;
+  padding:10px 20px;
+  display:inline-block;
+  
+}
+.filled-button:hover{
+  border:2px solid;
+  letter-spacing :2px;
+  transition: 1s;
+}
