@@ -269,48 +269,7 @@ ul.social-icons li:first-child{
 }
     
 
-/* Product page sidenavbar  */
-.side-navbar{
-margin:0;
-background-color: #ffc06e;
-height: 50px;
-}
-.side-navbar .left-content{
-    background-color: #72cc50;
-    margin-top: 20px;
-   margin-left: 65px;
-}
 
-.side-navbar .left-content h4 {
-    color:#fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding:10px;
-    text-align: center;
-
-}
-.side-navbar  li{
-display: inline-block;
-padding: 5px;
-margin-top:10px;
-}
-
-
-/* show the categories start */
-.side-navbar .right-content{
-    background-color: #75ce9f;
-    margin-top: 20px;
-   margin-left: 65px;
-}
-
-.side-navbar .right-content h4 {
-    color:#fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding:10px;
-    text-align: center;
-
-}
 
 
 /* services */

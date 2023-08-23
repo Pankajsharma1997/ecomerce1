@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style1.css">
     <style>
         .cart_img{
             width: 80px;
@@ -59,9 +59,9 @@
     
     <div class="conainer-fluid p-0">
     <!-- first child -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <img src="./image/product.webp" alt="" class="logo">
+    <img src="./Images/logo.png" alt="" class="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -125,8 +125,8 @@ cart();
 
 <!-- third child -->
 <div class="bg-light">
-  <h3 class="text-center">Hidden Store</h3>
-  <p class="text-center">Communication is at the heart of e-commerce and community</p>
+  <h3 class="text-center text-success">Mission-Dhanwantri</h3>
+  <p class="text-center text-success">Women Empowerment Through Herbs </p>
 </div>
 
 <!-- fourth child -->
@@ -183,7 +183,7 @@ cart();
 
 
 
-                    <td>$<?php echo $price_table; ?>/-</td>
+                    <td> <?php echo $price_table; ?>/-</td>
                     <td>
                       <form action="" method="post">
                         <input type="hidden" value="<?php echo $product_id ?>" name="update_quantity_id" id="">
@@ -193,7 +193,7 @@ cart();
                       </div>
                       </form>
                     </td>
-                    <td>$<?php echo $subtotal=number_format($price_table * $product_quantity)  ?></td>
+                    <td><?php echo $subtotal=number_format($price_table * $product_quantity)  ?></td>
                     <td>
                         <a href="cart.php?remove=<?php echo $product_id ?>" onclick="return confirm('Are you sure you want to delete this item')">
                         <i class="fa fa-trash text-danger"></i>
@@ -218,7 +218,7 @@ cart();
                 $result=mysqli_query($con,$cart_query);
                 $result_count=mysqli_num_rows($result);
                 if($result_count>0){
-                    echo "<h4 class='px-3'>Grand Total: $<strong class='text-info'> $grand_total/-</strong></h4>
+                    echo "<h4 class='px-3'>Grand Total: <strong class='text-success'> $grand_total/-</strong></h4>
                     <input type='submit' value='Continue Shopping' name='continue_shopping' id='' class='bg-info px-3 py-2 border-0 mx-3'>
                     <button class='bg-secondary px-3 py-2 border-0 '><a href='users_area/checkout.php' class='text-light text-decoration-none'>Checkout</button>
                     <a href='cart.php?delete_all' class='delete_all_btn bg-danger text-light p-2 text-decoration-none mx-3' onclick='return confirm('Are you sure you want to delete this item')'>
@@ -230,7 +230,7 @@ cart();
                 }
 
                 if(isset($_POST['continue_shopping'])){
-                    echo "<script> window.open('index.php','_self')</script>";
+                    echo "<script> window.open('display_all.php','_self')</script>";
                 }
             ?>
             
@@ -243,9 +243,13 @@ cart();
   </form>
 
 <!-- last child -->
-    <div class="bg-info p-3 text-center">
-        <p>All rights reserved @- Designed by Khanam-2022</p>
-    </div>
+<footer>
+<?php
+    include("./includes/footer.php");
+    ?>
+    </footer>
+
+
     </div>
 
 

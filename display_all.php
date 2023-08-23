@@ -28,31 +28,54 @@
 .logo{
     width: 7%;
     height: 7%; 
+} 
+/* Product page sidenavbar  */
+.side-navbar{
+margin:0;
+background-color:#fff;
+height: 50px;
+}
+.side-navbar .left-content{
+    background-color: #72cc50;
+    margin-top: 20px;
+   margin-left: 65px;
 }
 
-            /* third chlid */
-            .mission-heading{
-              margin-top: 30px;
-              margin-bottom: 20px;
-            
-             
-            }
-            .mission-heading  .section-heading{
-              text-align:center;
-              padding:5px;
-              background-color: #01A66F;
-              color:#fff;
-          }
-          .section-heading h4{
-            font-size:2.5em;
-    text-transform: uppercase;
-    color:#91de16;
-    margin-bottom: 50px;
-          }
+.side-navbar .left-content h4 {
+    color:#fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding:10px;
+    text-align: center;
+
+}
+.side-navbar .left-content li {
+display: inline-block;
+padding: 5px;
+margin-top:10px;
+}
+.side-navbar  li, a{
+  color:#fff;
+}
 
 
- 
-</style>
+
+/* show the categories start */
+.side-navbar .right-content{
+    background-color: #75ce9f;
+    margin-top: 20px;
+   margin-left: 65px;
+}
+
+.side-navbar .right-content h4 {
+    color:#fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding:10px;
+    text-align: center;
+
+}
+</style> 
 
 </head>
 <body>
@@ -130,14 +153,11 @@
 </nav>
 
 <!-- third child -->
-<div class="mission-heading">
-              <div class="container-fluid"> 
-                  <div class="section-heading">
-                    <h3> Mission-Dhanwantri</h3>
-                    <p> Women Empowerment Through Herbs </p>
-                  </div>
+<div class="bg-light">
+  <h3 class="text-center text-success">Mission-Dhanwantri</h3>
+  <p class="text-center text-success">Women Empowerment Through Herbs </p>
 </div>
-</div>
+
 <!-- sidenavbar -->
 <div class="side-navbar">
   <div class="container">

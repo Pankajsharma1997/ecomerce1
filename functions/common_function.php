@@ -34,7 +34,7 @@
               <h5 class='card-title'>$product_title</h5>
               <p class='card-text'>$product_description</p>
               <p class='card-text'>Price: $product_price/-</p>
-              <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+              <a href='index.php?add_to_cart=$product_id' class='btn btn-success'>Add to cart</a>
               <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
             </div>
           </div>
@@ -75,7 +75,7 @@
             <h5 class='card-title'>$product_title</h5>
             <p class='card-text'>$product_description</p>
             <p class='card-text'>Price: $product_price/-</p>
-            <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+            <a href='index.php?add_to_cart=$product_id' class='btn btn-success'>Add to cart</a>
             <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
           </div>
         </div>
@@ -118,7 +118,7 @@
             <h5 class='card-title'>$product_title</h5>
             <p class='card-text'>$product_description</p>
             <p class='card-text'>Price: $product_price/-</p>
-            <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+            <a href='index.php?add_to_cart=$product_id' class='btn btn-success'>Add to cart</a>
             <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
           </div>
         </div>
@@ -161,7 +161,7 @@
           <h5 class='card-title'>$product_title</h5>
           <p class='card-text'>$product_description</p>
           <p class='card-text'>Price: $product_price/-</p>
-          <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+          <a href='index.php?add_to_cart=$product_id' class='btn btn-success'>Add to cart</a>
           <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
         </div>
       </div>
@@ -182,13 +182,13 @@
               $brand_title=$row_data['brand_title'];
               $brand_id=$row_data['brand_id'];
               echo "<li class='nav-item'>
-              <a href='index.php?brand=$brand_id' class='nav-link text-light'>$brand_title</a>
+              <a href='display_all.php?brand=$brand_id' class='nav-link'>$brand_title</a>
             </li>";
           }
     }
 
 
-    // displaying brands in sidenav
+    // displaying categories in sidenav
     function getcategories(){
         global $con;
         $select_categories="Select * from `categories`";
@@ -200,7 +200,7 @@
               $category_title=$row_data['category_title'];
               $category_id=$row_data['category_id'];
               echo "<li class='nav-item'>
-              <a href='index.php?category=$category_id' class='nav-link text-light'>$category_title</a>
+              <a href='display_all.php?category=$category_id' class='nav-link'>$category_title</a>
             </li>";
           }
     }
@@ -240,7 +240,7 @@
             <h5 class='card-title'>$product_title</h5>
             <p class='card-text'>$product_description</p>
             <p class='card-text'>Price: $product_price/-</p>
-            <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+            <a href='display_all.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
             <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
           </div>
         </div>
@@ -282,8 +282,8 @@
               <h5 class='card-title'>$product_title</h5>
               <p class='card-text'>$product_description</p>
               <p class='card-text'>Price: $product_price/-</p>
-              <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
-              <a href='index.php' class='btn btn-secondary'>Go home</a>
+              <a href='index.php?add_to_cart=$product_id' class='btn btn-success'>Add to cart</a>
+              <a href='display_all.php' class='btn btn-secondary'>Go Product Page</a>
             </div>
           </div>
         </div>
@@ -340,13 +340,13 @@ function cart(){
         $num_of_rows=mysqli_num_rows($result_query);
         if($num_of_rows>0){
           echo "<script> alert('This item is already present inside art')</script>";
-          echo "<script> window.open('index.php','_self')</script>";
+          echo "<script> window.open('display_all.php','_self')</script>";
         }else{
             $insert_query="insert into `cart_details` (product_id,ip_address,quantity) 
             values ($get_product_id,'$get_ip_add',1)";
             $result_query=mysqli_query($con,$insert_query);
             echo "<script>alert('Item is added to cart')</script>";
-            echo "<script>window.open('index.php','_self')</script>";
+            echo "<script>window.open('display_all.php','_self')</script>";
         }
     }
 }
