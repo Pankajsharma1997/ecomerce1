@@ -18,72 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css file -->
-    <link rel="stylesheet" href="./CSS/style1.css">
+    <link rel="stylesheet" href="./CSS/product_details.css">
     <style>
-            /* third chlid */
-            .mission-heading{
-              margin-top: 30px;
-              margin-bottom: 20px;
-            
-             
-            }
-          .section-heading{
-              text-align:center;
-              padding:5px;
-              background-color: #01A66F;
-              color:#fff;
-          }
-           /* Product page sidenavbar  */
-.side-navbar{
-  margin:0;
-  background-color: #ffc06e;
-  height: 50px;
-  }
-  .side-navbar .left-content{
-      background-color: #72cc50;
-      margin-top: 20px;
-     margin-left: 65px;
-  }
-  
-  .side-navbar .left-content h4 {
-      color:#fff;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: bold;
-      padding:10px;
-      text-align: center;
-  
-  }
-  .side-navbar  li{
-  display: inline-block;
-  padding: 5px;
-  margin-top:10px;
-  }
-  
-  
-  /* show the categories start */
-  .side-navbar .right-content{
-      background-color: #75ce9f;
-      margin-top: 20px;
-     margin-left: 65px;
-  }
-  
-  .side-navbar .right-content h4 {
-      color:#fff;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: bold;
-      padding:10px;
-      text-align: center;
-  
-  }
-
-  .card-img-top{
-    height:290px;
-    width:290px;
-    margin:30px;
-
-  }
-  
-
+          
     </style>
 
 </head>
@@ -136,7 +73,7 @@ cart();
 
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-  <ul class="navbar-nav me-auto">
+  <ul class="navbar-nav mx-3">
       
       <?php
           if(!isset($_SESSION['username'])){
@@ -164,13 +101,9 @@ cart();
 </nav>
 
 <!-- third child -->
-<div class="mission-heading">
-              <div class="container-fluid"> 
-                  <div class="section-heading">
-                    <h3> Mission-Dhanwantri</h3>
-                    <p> Women Empowerment Through Herbs </p>
-                  </div>
-</div>
+<div class="bg-light">
+  <h3 class="text-center text-success">Mission-Dhanwantri</h3>
+  <p class="text-center text-success">Women Empowerment Through Herbs </p>
 </div>
 
 <!-- sidenavbar -->
@@ -183,7 +116,8 @@ cart();
       
         <!-- display The self help groups -->
         <ul>
-          <li> <?php  
+          <li> 
+            <?php  
         getbrands();
         ?></li>
         </ul>
@@ -194,7 +128,6 @@ cart();
         <div class="col-md-8">
         <div class="right-content">
              <h4> Categories </h4> 
-        
         <ul>
         <?php  
           getcategories(); 
@@ -204,34 +137,7 @@ cart();
         </div>
      </div>
   </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
 
 <!-- fourth child -->
 <div class="row px-1 my-5">

@@ -97,7 +97,7 @@ cart();
  
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-  <ul class="navbar-nav me-auto">
+  <ul class="navbar-nav mx-4">
       
       <?php
           if(!isset($_SESSION['username'])){
@@ -338,8 +338,10 @@ cart();
          <div class="col-md-6">
           <div class="icon"> 
           <p><i class="bi bi-geo-alt-fill"></i> Village Chameti,Gram Panchayat Kuhna Block Pragpur HP </p> 
-           <p> <i class="bi bi-telephone"></i> 8894195763</p> 
+           <p> <i class="bi bi-telephone"></i>  Vishvapujita Group-8894195763</p> 
            <p> <i class="bi bi-envelope"></i> vishavpujitagramsangathan@gmail.com </p>
+           <p><i class="bi bi-geo-alt-fill"></i> Village Lag Badhna,Gram Panchayat Baliana Block Pragpur HP  </p> 
+           <p> <i class="bi bi-telephone"></i>  Dhanwantri Group -  9805750440</p>
            </div>
          </div>
      </div>

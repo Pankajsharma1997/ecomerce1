@@ -1,7 +1,7 @@
 <?php
     include('../includes/connect.php');
     include('../functions/common_function.php');
-    // session_start();
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -88,6 +88,6 @@ if(isset($_POST['admin_login'])){
 }
 
 // if(isset($_SESSION['username'])){
-//     echo "<script>window.open('index.php','_self')</script>";
+//     echo "<script>window.open('home.php','_self')</script>";
 // }
 ?>

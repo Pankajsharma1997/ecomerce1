@@ -49,7 +49,7 @@ height: 50px;
     text-align: center;
 
 }
-.side-navbar .left-content li {
+.side-navbar  li {
 display: inline-block;
 padding: 5px;
 margin-top:10px;
@@ -74,6 +74,11 @@ margin-top:10px;
     padding:10px;
     text-align: center;
 
+}
+@media (max-width:992px){
+  .side-navbar .right-content{
+    margin-bottom: 20px;
+  }  
 }
 </style> 
 
@@ -125,7 +130,7 @@ margin-top:10px;
 
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-  <ul class="navbar-nav me-auto">
+  <ul class="navbar-nav mx-3">
       
       <?php
           if(!isset($_SESSION['username'])){
@@ -181,9 +186,10 @@ margin-top:10px;
              <h4> Categories </h4> 
         
         <ul>
-        <?php  
+          <li> <?php  
           getcategories(); 
-        ?>
+        ?> </li>
+        
         </ul>
       </div>
         </div>
@@ -212,6 +218,7 @@ margin-top:10px;
     </div>
 </div>
 </div>
+      </div>
 
 
 <!-- last child -->
