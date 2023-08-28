@@ -167,9 +167,6 @@ cart();
 
 
 <!-- crousal end -->
-
-
-
 <!-- product start -->
 <div class="latest-products">
   <div class="container">
