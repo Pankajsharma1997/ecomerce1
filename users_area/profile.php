@@ -62,7 +62,7 @@
           <a class="nav-link" href="profile.php">My Account</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup><?php cart_item(); ?></sup></a>
@@ -70,13 +70,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Total price: <?php total_cart_price(); ?>/-</a>
         </li>
-
       </ul>
-      <form class="d-flex" action="../search_product.php" method="get">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
-        
-        <input type="submit" id="" value="Search" class="btn btn-outline-light" name="search_data_product">
-      </form>
     </div>
   </div>
 </nav>
@@ -118,9 +112,9 @@ cart();
 
 
 <!-- third child -->
-<div class="bg-success">
-  <h3 class="text-center text-light">Mission-Dhanwantri</h3>
-  <p class="text-center text-light">Women Empowerment Through Herbs</p>
+<div class="bg-light">
+  <h3 class="text-center text-success">Mission-Dhanwantri</h3>
+  <p class="text-center text-success">Women Empowerment Through Herbs</p>
 </div>
 
 <!-- fourth child -->
@@ -128,7 +122,7 @@ cart();
     <div class="col-md-2">
         <ul class="navbar-nav bg-secondary text-center" style="height:100vh">
         <li class="nav-item bg-success">
-          <a class="nav-link text-light" href="#"><h4>Your profile</h4></a>
+          <a class="nav-link text-light" href="#"><h4>Your Profile</h4></a>
         </li>
 
         <?php

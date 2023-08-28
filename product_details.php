@@ -43,9 +43,17 @@
         <li class="nav-item">
           <a class="nav-link" href="display_all.php">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="users_area/user_registration.php">Register</a>
-        </li>
+        <?php
+            if(isset($_SESSION['username'])){
+                echo "<li class='nav-item'>
+                <a class='nav-link' href='users_area/profile.php'>My Account</a>
+              </li>";
+            }else{
+              echo "<li class='nav-item'>
+                <a class='nav-link' href='users_area/user_registration.php'>Register</a>
+              </li>";
+            }
+        ?>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
@@ -117,14 +125,13 @@ cart();
         <!-- display The self help groups -->
         <ul>
           <li> 
-            <?php  
+          <?php  
         getbrands();
         ?></li>
         </ul>
         </div>
         </div>
-        
-        
+
         <div class="col-md-8">
         <div class="right-content">
              <h4> Categories </h4> 

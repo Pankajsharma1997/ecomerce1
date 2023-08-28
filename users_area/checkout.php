@@ -105,13 +105,9 @@
 </nav>
 
 <!-- third child -->
-<div class="mission-heading">
-              <div class="container-fluid"> 
-                  <div class="section-heading">
-                    <h3> Mission-Dhanwantri</h3>
-                    <p> Women Empowerment Through Herbs </p>
-                  </div>
-</div>
+<div class="bg-light">
+  <h3 class="text-center text-success">Mission-Dhanwantri</h3>
+  <p class="text-center text-success">Women Empowerment Through Herbs</p>
 </div>
 
 

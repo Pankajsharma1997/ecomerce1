@@ -69,13 +69,7 @@ if(isset($_POST['admin_login'])){
     $row_count=mysqli_num_rows($result);
     $user_ip=getIPAddress();
 
-
-    // cart query
-    // $select_query_cart="Select * from `cart_details` where ip_address='$user_ip'";
-    // $select_cart=mysqli_query($con,$select_query_cart);
-    // $row_count_cart=mysqli_num_rows($select_cart);
-    // if($row_count>0){
-        // $_SESSION['username']=$username;
+        $_SESSION['admin_name']=$username;
         if(password_verify($password,$row_data['admin_password'])){
             echo "<script>alert('Login Successful')</script>";
             echo "<script>window.open('home.php','_self')</script>";
@@ -86,8 +80,4 @@ if(isset($_POST['admin_login'])){
         }
     
 }
-
-// if(isset($_SESSION['username'])){
-//     echo "<script>window.open('home.php','_self')</script>";
-// }
 ?>

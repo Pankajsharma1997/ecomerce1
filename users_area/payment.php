@@ -15,8 +15,8 @@
 </head>
 <style>
     .payment_img{
-        width: 60%;
-        margin: auto;
+        width: 90%;
+        margin-top:40px;
         display: block;
     }
     .shipping-form  h2{
@@ -29,21 +29,30 @@
         border:2px solid brown;
     }
     /* shipping form */
-   .left-content .contact-form input,textarea{
- margin-left: 30px;
- margin-bottom: 10px;
- padding:10px
-
+   .left-content input,textarea{
+    width: 95%;
+  margin:15px 20px 10px 5px; 
 }
+   .left-content textarea{
+  width:95%;
+  margin:15px 20px 10px 5px; 
+   }
+
+/* css for Proceed now button */
 .btn-send{
     border:none;
     padding:10px 20px;
     background-color: #72cc50;
     color:#fff;
-    margin-left:500px;
+    margin-left:150px;
+    margin-bottom:30px;
 }
 .btn-send:hover{
     background-color: #17850d;
+}
+button a{
+  text-decoration: none;
+  color:#fff;
 }
 
 </style>
@@ -58,74 +67,116 @@
         $user_id=$run_query['user_id'];
 
     ?>
-    <div class="shipping-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2> Payment Options</h2>
-                </div>
-                
-                <div class="col-md-6">
-                <div class="left-content">
-                    <!-- Section Heading  start -->
-                    <div class="section-heading">
+
+
+<!-- Best features start -->
+<div class = "shipping-form"> 
+    <div class="container">
+      <div class="row"> 
+        <div class="col-md-12">
+          <div class="row"> 
+            <h2> Payment Options</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="left-content"> 
+          <form  method="post" onsubmit="return validateForm()">
+
+           <!-- Section Heading  start -->
+           <div class="row">
                          <h2> Shipping Address</h2>
                     </div>
                    <!-- Section Heading End -->
 
-                   <!-- Shipping address form Start -->
-                   <div class="contact-form">
-                        <form  method="post" onsubmit="return validateForm()" >
-                     
-             <div class="col-md-10"> 
+          <div class="form-outline"> 
               <input type="text" id="name"  name="fullname" class="form-control" placeholder="Full Name" autocomplete="off">
              </div>
 
-             <div class="col-md-10"> 
-              <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" autocomplete="off">
+             <div class="form-outline"> 
+              <input type="text" id="email"  name="email" class="form-control" placeholder="Enter Email" autocomplete="off">
              </div>
 
-             <div class="col-md-10"> 
-              <input type="text" id="subject"  name="subject" class="form-control" placeholder="subject">
+             <div class="form-outline"> 
+              <input type="text" id="subject"  name="subject" class="form-control" placeholder="Subject" autocomplete="off">
              </div>
-                
-             <div class="col-md-10"> 
-              <textarea id="message" row="6" name="message" class="form-control" placeholder="Enter Your Message">
+
+       
+             <div class="form-outline"> 
+              <textarea id="message" row="5" name="message" class="form-control" placeholder="Enter Your Message">
               </textarea>
              </div>
-             <div class="col-md-10">
-              <button type="submit" class="btn-send" name="submit"> Send Message </button>
+             
+             <div class="form-outline"> 
+              <input type="number" id="pincode"  name="pincode" class="form-control" placeholder=" Enter Pincode" autocomplete="off">
              </div>
-              </div>
-
-          </form>
 
 
-                  
-                   <!-- Shipping address form Start -->
-
-                </div>
-                </div>
-
-                <div class="right-content">
-                <div class="col-md-6">
-
-                </div>
-                </div>
-            </div>
+             <div class="form-outline">
+              <button type="submit" class="btn-send" name="submit">  <a href="order.php?user_id=<?php echo $user_id ?>">  Send Message  </a> </button>
+             </div>
+          </div>
+       </form>
         </div>
 
+        <div class="col-md-6">
+          <div class="right-image">
+          <a href="https://www.paypal.com" target="_blank"><img src="../Images/payment.jpg" alt="" class="payment_img"></a> 
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container">
+ </div>
+ <!-- best feature end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <div class="container">
         <h2 class="text-center text-info">Payment options</h2>
         <div class="row d-flex justify-content-center align-items-center my-5">
             <div class="col-md-6">
-                <a href="https://www.paypal.com" target="_blank"><img src="../Images/payment.jpg" alt="" class="payment_img"></a>
+            <a href="https://www.paypal.com" target="_blank"><img src="../Images/payment.jpg" alt="" class="payment_img"></a> 
             </div>
             <div class="col-md-6">
                 <a href="order.php?user_id=<?php echo $user_id ?>"><h2 class="text-center">Pay Online</h2></a>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
+<script src="../js/main.js"></script>
 </html>

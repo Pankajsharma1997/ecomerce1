@@ -23,7 +23,7 @@
         <td><?php echo $number ?></td>
         <td><?php echo $category_title ?></td>
         <td><a href="home.php?edit_category=<?php echo $category_id ?>" class="text-light"><i class="fa fa-pencil-square-o"></i></a></td>
-            <td><a href="home.php?delete_category=<?php echo $category_id ?>" class="text-light" onclick="return confirm('Are you sure you want to delete this product');"><i class="fa fa-trash"></i></a></td>
+            <td><a href="home.php?delete_category=<?php echo $category_id ?>" class="text-light" onclick="return confirm('Are you sure you want to delete this category');"><i class="fa fa-trash"></i></a></td>
         </tr>
         <?php
             }

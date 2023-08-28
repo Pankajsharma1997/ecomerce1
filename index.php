@@ -124,8 +124,8 @@ cart();
 </nav>
       </div>
 
-<!-- banner start
-<div class="banner-about"> 
+ <!-- banner start -->
+<!-- <div class="banner-about">  -->
 <!-- <img src="./Images/camomile tea.jpg" class="card-img-top" alt="..."> -->
     <!-- <div class="text-content"> 
         <h4> Mission-Dhanwantri  </h4>
@@ -135,7 +135,6 @@ cart();
 <!-- banner end -->
 
 <!-- crousel start -->
-
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
@@ -167,6 +166,7 @@ cart();
 
 
 <!-- crousal end -->
+
 <!-- product start -->
 <div class="latest-products">
   <div class="container">

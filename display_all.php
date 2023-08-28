@@ -5,6 +5,7 @@
     session_start();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +34,11 @@
 .side-navbar{
 margin:0;
 background-color:#fff;
-height: 50px;
+
 }
 .side-navbar .left-content{
     background-color: #72cc50;
-    margin-top: 20px;
-   margin-left: 65px;
+ 
 }
 
 .side-navbar .left-content h4 {
@@ -63,8 +63,8 @@ margin-top:10px;
 /* show the categories start */
 .side-navbar .right-content{
     background-color: #75ce9f;
-    margin-top: 20px;
-   margin-left: 65px;
+   
+
 }
 
 .side-navbar .right-content h4 {
@@ -105,9 +105,17 @@ margin-top:10px;
         <li class="nav-item">
           <a class="nav-link text-light" href="display_all.php">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="users_area/user_registration.php">Register</a>
-        </li>
+        <?php
+            if(isset($_SESSION['username'])){
+                echo "<li class='nav-item'>
+                <a class='nav-link' href='users_area/profile.php'>My Account</a>
+              </li>";
+            }else{
+              echo "<li class='nav-item'>
+                <a class='nav-link' href='users_area/user_registration.php'>Register</a>
+              </li>";
+            }
+        ?>
         <li class="nav-item">
           <a class="nav-link text-light" href="contact.php">Contact</a>
         </li>

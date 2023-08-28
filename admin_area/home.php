@@ -2,16 +2,16 @@
     // connect file
     include('../includes/connect.php');
     include('../functions/common_function.php');
-    // session_start();
+    session_start();
 ?>    
 
-<!-- <?php
-    if(!isset($_SESSION['username'])){
-        echo "<script>window.open('admin_login.php','_self')</script>";
+<?php
+    if(!isset($_SESSION['admin_name'])){
+        echo "<script>window.open('index.php','_self')</script>";
     }
 
-    $admin_name=$_SESSION['username'];
-?> -->
+    $admin_name=$_SESSION['admin_name'];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -79,7 +79,6 @@
                 </div>
 
                 <div class="button text-center ">
-                    <!-- button*10>a.nav-link.text-light.bg-info.my-1 -->
                     <button class="my-3"><a href="insert_product.php" class="nav-link text-light bg-info my-1">Insert Products</a></button>
                     <button><a href="home.php?view_products" class="nav-link text-light bg-info my-1">View Products</a></button>
                     <button><a href="home.php?insert_category" class="nav-link text-light bg-info my-1">Insert Categories</a></button>

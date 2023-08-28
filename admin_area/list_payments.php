@@ -39,7 +39,7 @@
             <td><?php echo $payment_mode ?></td>
             <td><?php echo $date ?></td>
             
-            <td><a href='home.php?delete_payments=<?php echo $order_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this product');"><i class='fa fa-trash'></i></a></td>
+            <td><a href='home.php?delete_payments=<?php echo $order_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this payment');"><i class='fa fa-trash'></i></a></td>
         </tr> 
         
 

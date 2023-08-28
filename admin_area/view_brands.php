@@ -1,4 +1,4 @@
-<h3 class="text-center text-success">All Brands</h3>
+<h3 class="text-center text-success">All Self Help Group </h3>
 <table class="table table-bordered mt-5">
     <thead class="bg-info text-center">
         <tr>
@@ -23,7 +23,7 @@
         <td><?php echo $number ?></td>
         <td><?php echo $brand_title ?></td>
         <td><a href="home.php?edit_brands=<?php echo $brand_id ?>" class="text-light"><i class="fa fa-pencil-square-o"></i></a></td>
-            <td><a href="home.php?delete_brands=<?php echo $brand_id ?>" class="text-light" onclick="return confirm('Are you sure you want to delete this product');"><i class="fa fa-trash"></i></a></td>
+            <td><a href="home.php?delete_brands=<?php echo $brand_id ?>" class="text-light" onclick="return confirm('Are you sure you want to delete this Self Help Group');"><i class="fa fa-trash"></i></a></td>
         </tr>
         <?php
             }

@@ -43,7 +43,7 @@
             <td><?php echo $user_mobile ?></td>
 
             
-            <td><a href='home.php?delete_users=<?php echo $user_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this product');"><i class='fa fa-trash'></i></a></td>
+            <td><a href='home.php?delete_users=<?php echo $user_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this user');"><i class='fa fa-trash'></i></a></td>
         </tr> 
         
 

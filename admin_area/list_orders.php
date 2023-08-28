@@ -42,7 +42,7 @@
             <td><?php echo $total_products ?></td>
             <td><?php echo $order_date ?></td>
             <td><?php echo $order_status ?></td>
-            <td><a href='home.php?delete_orders=<?php echo $order_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this product');"><i class='fa fa-trash'></i></a></td>
+            <td><a href='home.php?delete_orders=<?php echo $order_id ?>' class='text-light' onclick="return confirm('Are you sure you want to delete this order');"><i class='fa fa-trash'></i></a></td>
         </tr>
         
 
