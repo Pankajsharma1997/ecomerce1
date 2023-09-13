@@ -18,6 +18,13 @@
 
 <!-- External stylesheet  -->
 <link rel="stylesheet" href="./CSS/style.css">
+<style> 
+.thumb-container img{
+    width: 350px;
+    height:350px;
+    object-fit: contain;
+    overflow: hidden;
+}</style>
 
 </head>
 <body>
@@ -72,12 +79,12 @@
           <div class="left-content"> 
             <h5> Vishavpujita Gram Sangathan </h5>
           </div>
-          <p>Vishavpujita gram sangathan came into existence as an aggregation of 9 Self Help Groups of women
+          <p>Vishavpujita gram sangathan came into existence as an aggregation of 10 Self Help Groups of women
             Comprises of 92 ladies in the month of April 2021. 
           </p>
           <ul> 
             <li>Initially 2 groups named Vrinda & Vishavpawani 
-              were formed during Sep 2020 for value addition of Tulsi being produced under MGNREGA scheme of  RD deptt & technical guidance of Ayush Deptt ( SMPB).
+              were formed during Sep 2020 for value addition of Tulsi being produced under MGNREGA scheme of  RD deptt & technical guidance of Ayush Deptt (SMPB).
             </li>
             <li>The companies were not paying the fair price 
               to the farmers, hence to resolve this issue, these SHGs has played significant role in purchasing
@@ -111,22 +118,23 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="./Images/Man1.jpg" alt="">
+                            <img src="./Images/sunil.jpeg" alt="Nodel Officer">
                             <div class="hover-content">
                                 <ul class="social-icons">
+                                <li><a href="https://youtu.be/8LsN9fi7GuU?si=y1lG-GG5iF8N3Cu3" target="blank"><i class="bi bi-youtube"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-facebook"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-whatsapp"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-twitter"></i> </a> </li>
-                                <li><a href="#"><i class="bi bi-linkedin"></i> </a> </li>
+                                
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="down-content">
-                        <h4> Dr. Nipun Jindal, I.A.S </h4>
-                        <strong> Deputy Commissioner-Kangra</strong> 
-                        <p> The Main Architect of the Mission-Dhanwantri is Dr. Nipun Jindal,I.A.S  DC-Kangra . They take step to increase the 
-                          income of rural women cultivating the herbs in waste land and make profit. 
+                        <h4>Dr.Sunil</h4>
+                        <strong> Nodel Officer </strong> 
+                        <p>  Dr. Sunil is the nodel officer of Mission Dhanwantri and main backbone of the mission to implement the
+                          project idea files to field. 
                         </p>
                     </div>
                 </div>
@@ -134,33 +142,34 @@
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="./Images/Man2.jpg" alt="">
+                            <img src="./Images/pooja.jpeg" alt="Vishvapujita head">
                             <div class="hover-content">
                                 <ul class="social-icons">
+                                <li><a href="https://youtu.be/EBZyQgy-RjI?si=F5zRvGJNTuUjVg2_" target="blank"><i class="bi bi-youtube"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-facebook"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-whatsapp"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-twitter"></i> </a> </li>
-                                <li><a href="#"><i class="bi bi-linkedin"></i> </a> </li>
+                              
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="down-content">
-                        <h4> Dr.Sunil  </h4>
-                        <strong> Nodel Officer</strong> 
-                        <p> Dr. Sunil is the nodel officer of Mission Dhanwantri and main backbone of the mission to implement the
-                          project idea files to field.  </p>
+                        <h4> Pooja Chouhan  </h4>
+                        <strong> Co-Founder </strong> 
+                        <p>Pooja Chouhan Pardhan(Head) of the <strong> Vishvpujita Gram Sangathan </strong>  Self Help Group under NRLM .   </p>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="team-member">
                         <div class="thumb-container">
-                            <img src="./Images/smilygirl.jpg" alt="">
+                            <img src="./Images/seema.jpeg" alt="Dhanwantri Pardhan">
                             <div class="hover-content">
                                 <ul class="social-icons">
-                                <li><a href="#"><i class="bi bi-facebook"></i> </a> </li>
-                                <li><a href="#"><i class="bi bi-whatsapp"></i> </a> </li>
+                                <li><a href="whatsapp://send?text=GFG Example for whatsapp sharing"data-action="share/whatsapp/share"
+                                         target="_blank"><i class="bi bi-whatsapp"></i> </a> </li>
+                                         <li><a href="#"><i class="bi bi-facebook"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-twitter"></i> </a> </li>
                                 <li><a href="#"><i class="bi bi-linkedin"></i> </a> </li>
                                 </ul>
@@ -168,9 +177,9 @@
                         </div>
                     </div>
                     <div class="down-content">
-                        <h4> Pooja Chouhan </h4>
+                        <h4> Seema Sharma </h4>
                         <strong> Co-Founder  </strong> 
-                        <p> Pooja Chouhan Pardhan(Head) of the <strong> Vishvpujita Gram Sangathan </strong>  Self Help Group under NRLM . </p>
+                        <p> Seema Sharma Pardhan(Head) of the <strong> Dhanwantri </strong>  Self Help Group under NRLM . </p>
                     </div>
                 </div>
             </div>

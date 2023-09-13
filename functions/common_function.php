@@ -1,9 +1,5 @@
 <?php
 
-    // including connect file
-    // include('includes/connect.php');
-
-    // getting products
     function getproducts(){
         global $con;
 
@@ -182,7 +178,7 @@
               $brand_title=$row_data['brand_title'];
               $brand_id=$row_data['brand_id'];
               echo "<li class='nav-item'>
-              <a href='display_all.php?brand=$brand_id' class='nav-link'>$brand_title</a>
+              <a href='display_all.php?brand=$brand_id' class='nav-link text-light'>$brand_title</a>
             </li>";
           }
     }
@@ -200,7 +196,7 @@
               $category_title=$row_data['category_title'];
               $category_id=$row_data['category_id'];
               echo "<li class='nav-item'>
-              <a href='display_all.php?category=$category_id' class='nav-link'>$category_title</a>
+              <a href='display_all.php?category=$category_id' class='nav-link text-light'>$category_title</a>
             </li>";
           }
     }
